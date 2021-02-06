@@ -168,7 +168,6 @@ class ScreenshotController extends Controller
 
             return $response;
         }catch (Exception $exception){
-            dd($exception->getMessage());
             $invalid_url_filename   = 'system_error.png';
             $invalid_url_filePath   =   base_path('public/images/response/');
             $invalid_url_image = $invalid_url_filePath.$invalid_url_filename;
